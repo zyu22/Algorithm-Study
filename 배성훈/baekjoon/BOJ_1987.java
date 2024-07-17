@@ -3,7 +3,7 @@ import java.util.*;
 
 // 백준 1987. 알파벳
 // 백트래킹 문제
-// N-Queen 과 왜 난이도가 같은지 모르겠다..
+// N-Queen 과 왜 난이도가 같은진 모르겠다
 public class BOJ_1987 {
     static int[] dy = {-1, 1, 0, 0};
     static int[] dx = {0, 0, -1, 1};
