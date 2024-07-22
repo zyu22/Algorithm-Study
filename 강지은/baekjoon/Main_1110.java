@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Main_10809 {
+public class Main_1110 {
 	
 	static int size = 2;
 	static int[] arr = new int[100];
