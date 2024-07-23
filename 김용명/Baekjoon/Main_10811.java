@@ -34,6 +34,5 @@ public class Main_10811 {
 			System.out.print(arr[c]+" ");
 		}
 	}
-
 }
 // 21345	12435	34215 1234 -> 4321 i~j-1까
