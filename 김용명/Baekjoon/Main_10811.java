@@ -33,7 +33,6 @@ public class Main_10811 {
 		for (int c = 0; c < N; c++) {
 			System.out.print(arr[c]+" ");
 		}
-		
 	}
 
 }
