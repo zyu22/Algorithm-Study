@@ -82,5 +82,3 @@ git commit -m "[BOJ] Hello World / 브론즈5 / 1분" -m "https://www.acmicpc.ne
 
 <br />
 <br />
-
-## ✅ 참여자
