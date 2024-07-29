@@ -28,5 +28,4 @@ public class Main_10818 {
 		}
 		System.out.println(min + " " + max);
 	}
-
 }

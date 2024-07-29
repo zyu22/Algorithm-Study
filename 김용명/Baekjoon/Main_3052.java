@@ -31,5 +31,4 @@ public class Main_3052 {
 		}
 		System.out.println(num);
 	}
-
 }

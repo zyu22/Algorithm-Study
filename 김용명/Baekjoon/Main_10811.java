@@ -33,8 +33,6 @@ public class Main_10811 {
 		for (int c = 0; c < N; c++) {
 			System.out.print(arr[c]+" ");
 		}
-		
 	}
-
 }
 // 21345	12435	34215 1234 -> 4321 i~j-1까
