@@ -1,31 +1,27 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
+package boj;
+
+import java.util.Scanner;
 
 public class Main_10818 {
-
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 		
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int N = sc.nextInt();
+		int[] nums = new int[N];
+		int max = -1000000;
+		int min = 1000000;
 		
-		int N = Integer.parseInt(br.readLine());
 		
-		StringTokenizer st = new StringTokenizer(br.readLine()," ");
-		
-		int[] arr = new int[N];
-		
-		for (int i = 0; i < N; i++) {
-			arr[i] = Integer.parseInt(st.nextToken());
-		}
-		
-		int max = arr[0];
-		int min = arr[0];
-			
-		for (int j = 0; j < N; j++) {
-			if(max < arr[j]) max = arr[j];
-			if(min > arr[j]) min = arr[j];
+		for(int i = 0; i<N; i++) {
+			nums[i] = sc.nextInt();
+			if(nums[i] < min) {
+				min = nums[i];
+			}
+			if(nums[i] > max) {
+				max = nums[i];
+			}
 		}
 		System.out.println(min + " " + max);
+		sc.close();
 	}
 }
