@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
@@ -10,7 +11,6 @@ import java.util.StringTokenizer;
 public class Main2573_빙산 {
 	static int N, M;
 	static int[][] map;
-	static int[][] copy;
 	static int[][] drc = {{-1, 0}, {0, 1}, {1, 0}, {0, -1}};
 	
 	static class Point {
@@ -31,7 +31,6 @@ public class Main2573_빙산 {
 		M = Integer.parseInt(st.nextToken());
 		
 		map = new int[N][M];
-		copy = new int[N][M];
 		
 		for(int i = 0; i < N; i++) {
 			st = new StringTokenizer(br.readLine());
@@ -48,8 +47,7 @@ public class Main2573_빙산 {
 			
 			bfs();
 			time++;
-			map = copy.clone();
-			
+
 			
 			count = icebergCount();
 			
@@ -102,11 +100,12 @@ public class Main2573_빙산 {
             }
             
 
-            // 0보다 작으면
+            // 0보다 작으면 -> 방문체크 하기 때문에 copy 둘 필요 x
             if(map[p.r][p.c] - seaCount < 0) {
-            	copy[p.r][p.c] = 0;
+            	map[p.r][p.c] = 0;
+            	
             } else {
-            	copy[p.r][p.c] = map[p.r][p.c] - seaCount;
+            	map[p.r][p.c] -= seaCount;
             }
         }
     }
